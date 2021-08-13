@@ -15,11 +15,230 @@
 
      <header class="header">
        <div class="container">
-         
+         <div class="header__inner">
+           <div class="header__top">
+             <a class="logo" href="#">
+               <img src="images/logo.png" alt="Логотип">
+             </a>
+             <nav class="menu">
+               <ul class="menu__list">
+                 <li class="menu__list-item">
+                   <a class="menu__list-link" href="#">Услуги </a>
+                 </li>
+                 <li class="menu__list-item">
+                   <a class="menu__list-link" href="#">Калькулятор</a>
+                 </li>
+                 <li class="menu__list-item">
+                   <a class="menu__list-link" href="#">Как мы работаем</a>
+                 </li>
+                 <li class="menu__list-item">
+                   <a class="menu__list-link" href="#">Отзывы</a>
+                 </li>
+                 <li class="menu__list-item">
+                   <a class="menu__list-link" href="#">Контакты</a>
+                 </li>
+               </ul>
+             </nav>
+             <div class="contacts">
+               <div class="contacts__phone">
+                 <img src="images/icons/phone-icon.svg" alt="Телефон">
+                 <a href="tel:+79036526722">+7 (903) 652 67 22</a>
+               </div>
+               <div class="contacts__email">
+                 <img src="images/icons/email-icon.svg" alt="Почта">
+                 <a href="mailto:manager@mtk-logistics.ru">manager@mtk-logistics.ru</a>
+               </div>
+             </div>
+           </div>
+           <div class="header__bottom">
+             <div class="header__content">
+               <h1 class="header__title">
+                 Все виды грузоперевозок
+               </h1>
+               <p class="header__text">
+                 Мы бережно доставим любой груз от 1 тонны до 20 тонн в любую точку страны!
+               </p>
+               <ul class="header__bottom-list" type="disc">
+                 <li class="header__bottom-item">скоропортящиеся</li>
+                 <li class="header__bottom-item">крупногабаритные</li>
+                 <li class="header__bottom-item">негабаритные грузы</li>
+               </ul>
+               <a class="header__bottom-link" href="#">
+                 Рассчитать стоимость
+               </a>
+             </div>
+             <div class="header__picture">
+               <img src="images/truck.png" alt="Машина">
+             </div>
+           </div>
+         </div>
        </div>
      </header>
 
      <main class="page">
+       
+      <section class="order" id="order">
+         <div class="container">
+           <div class="order__inner">
+             <div class="order__text">
+               <div class="order__title">
+                 Быстрый заказ услуг
+               </div>
+               <div class="order__subtitle">
+                 Заполните, пожалуйста, форму
+               </div>
+             </div>
+             <form class="order__form">
+               <input class="order__name" type="text" placeholder="Виктор" required>
+               <input class="order__number" type="tel" placeholder="+7 (_ _ _)  _ _ _  _ _  _ _" required>
+               <button class="order__btn" type="submit">Перезвоните мне</button>
+             </form>
+           </div>
+         </div>
+       </section>
+
+       <section class="services">
+         <div class="container">
+           <div class="services__inner">
+             <div class="services__text">
+               <p class="services__text-item">
+                 Мы — межрегиональная транспортная компания
+                 MTK-logistics.
+                 Предоставляем услуги по перевозке всех видов грузов по Воронежу и России. Основной принцип нашей
+                 работы — надёжность и точность. Предлагаем
+                 сотрудничество в сфере грузоперевозок по выгодным условиям.
+               </p>
+               <p class="services__text-item">
+                 Мы бережно доставим любой груз от 1 тонны до 20 тонн в любую точку страны! С нами, можно спать спокойно
+                 и не переживать за сохранность груза, потому что мы несем полную материальную ответственность.
+               </p>
+             </div>
+             <h2 class="services__title">
+               Всегда к вашим услугам собственный и наёмный транспорт
+             </h2>
+             <div class="services__box">
+               <div class="services__item">
+                 <div class="services__item-content">
+                   <h4 class="services__item-title">
+                     Грузоперевозки 
+                     по
+                     Воронежу и области
+                   </h4>
+                   <a class="services__item-details" href="#">
+                     Подробнее
+                   </a>
+                   <a class="services__item-order" href="#order">
+                     Заказать услугу
+                   </a>
+                 </div>
+                 <div class="services__item-decor">
+                   <img src="images/decor/1.svg" alt="Декор">
+                 </div>
+               </div>
+               <div class="services__item">
+                 <div class="services__item-content">
+                   <h4 class="services__item-title">
+                     Междугородние перевозки от 1 до 20 тонн
+                   </h4>
+                   <a class="services__item-details" href="#">
+                     Подробнее
+                   </a>
+                   <a class="services__item-order" href="#order">
+                     Заказать услугу
+                   </a>
+                 </div>
+                 <div class="services__item-decor">
+                   <img src="images/decor/2.svg" alt="Декор">
+                 </div>
+               </div>
+               <div class="services__item">
+                 <div class="services__item-content">
+                   <h4 class="services__item-title">
+                     Доставка сборных грузов
+                     / догрузом /
+                     попутным грузом
+                   </h4>
+                   <a class="services__item-details" href="#">
+                     Подробнее
+                   </a>
+                   <a class="services__item-order" href="#order">
+                     Заказать услугу
+                   </a>
+                 </div>
+                 <div class="services__item-decor">
+                   <img src="images/decor/3.svg" alt="Декор">
+                 </div>
+               </div>
+               <div class="services__item">
+                 <div class="services__item-content">
+                   <h4 class="services__item-title">
+                     Рефрежираторные,
+                     температурные
+                     перевозки
+                   </h4>
+                   <a class="services__item-details" href="#">
+                     Подробнее
+                   </a>
+                   <a class="services__item-order" href="#order">
+                     Заказать услугу
+                   </a>
+                 </div>
+                 <div class="services__item-decor">
+                   <img src="images/decor/4.svg" alt="Декор">
+                 </div>
+               </div>
+               <div class="services__item">
+                 <div class="services__item-content">
+                   <h4 class="services__item-title">
+                     Перевозка
+                     опасных
+                     грузов
+                   </h4>
+                   <a class="services__item-details" href="#">
+                     Подробнее
+                   </a>
+                   <a class="services__item-order" href="#order">
+                     Заказать услугу
+                   </a>
+                 </div>
+                 <div class="services__item-decor">
+                   <img src="images/decor/5.svg" alt="Декор">
+                 </div>
+               </div>
+               <div class="services__item services__last">
+                   <h4 class="services__item-title">
+                     Не знаете какой тип перевозок подойдёт именно Вам?
+                   </h4>
+                 <div class="services__item-form">
+                   <p class="services__item-text">
+                     Заполните форму и лучшие менеджеры ответят на все Ваши вопросы
+                   </p>
+                   <a class="services__item-order" href="#order">
+                     Заполнить форму связи
+                   </a>
+                 </div>
+               </div>
+             </div>
+             <p class="services__text">
+               Мы бережно доставим любой груз от 1 тонны до 20 тонн в любую точку страны! С нами, можно спать спокойно и
+               не переживать за сохранность груза, потому что мы несем полную материальную ответственность.
+             </p>
+           </div>
+         </div>
+       </section>
+
+       <section class="car-park">
+         <div class="container">
+           <div class="car-park__inner">
+             <h3 class="car-park__title">
+               Наш автопарк
+             </h3>
+             <p class="car-park__subtitle">
+               Собственный и наёмный транспорт: фуры и газели
+             </p>
+           </div>
+         </div>
+       </section>
 
      </main>
 

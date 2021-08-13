@@ -1,0 +1,15 @@
+@import 'vars'; //пишутся переменные для цвета, шрифта и т.д. 
+@import 'fonts'; 
+@import 'libs';
+@import 'reset'; //обнуление стилей
+@import 'global'; //глобальные стили, типо reset.css. Что-то для бади, ссылок
+@import 'media'; // здесь медиа запросы
+
+
+body {
+  @extend %montserrat-400;
+  color: #353535;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}

@@ -1,0 +1,34 @@
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1280;
+$md1: $maxWidthContainer+12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$mainColor: #353535;
+$title: #2E2E2E;
+
+%montserrat-800 {
+  font-family: "Montserrat-ExtraBold",
+    sans serif;
+  font-weight: 800;
+}
+
+%montserrat-600 {
+  font-family: "Montserrat-SemiBold",
+    sans serif;
+  font-weight: 600;
+}
+
+%montserrat-500 {
+  font-family: "Montserrat-Medium",
+  sans serif;
+  font-weight: 500;
+}
+
+%montserrat-400 {
+  font-family: "Montserrat-Regular",
+    sans serif;
+  font-weight: 400;
+}

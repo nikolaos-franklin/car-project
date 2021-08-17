@@ -31,5 +31,15 @@ $('.comments__pages').slick({
         dots: true
     });
 
- 
+});
+
+$(document).ready(function(){
+   $('.partners').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+  });
 });

@@ -94,7 +94,8 @@
 
 .contacts {
   &__phone,
-  &__email {
+  &__email,
+  &__adress {
     display: flex;
     align-items: center;
     img {
@@ -109,6 +110,10 @@
   }
   &__phone {
     margin-bottom: 13px;
+  }
+  &__adress {
+    padding-top: 13px;
+    max-width: 300px;
   }
 }
 
@@ -683,5 +688,86 @@
     line-height: 20px;
     color: #818181;
     padding-left: 30px;
+  }
+}
+
+.support {
+  padding-top: 170px;
+  &__title {
+    @extend %title;
+    max-width: 655px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: inline-block;
+  }
+  &__text {
+    max-width: 800px;
+    margin-bottom: 80px;
+    text-align: center;
+    display: inline-block;
+  }
+  .order {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.partners {
+  background: #F2F2F2;
+  border-radius: 5px;
+  @extend %montserrat-700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000000;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  &__item {
+    padding: 40px 0 30px;
+  }
+  &__item+.partners__item {
+    padding-left: 18px;
+  }
+}
+
+.footer {
+  padding: 100px 0 65px;
+  background: linear-gradient(180deg, rgb(201, 47, 47), rgb(41, 39, 167));
+  color: #FFFFFF;
+  &__top {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     margin-bottom: 100px;
+  }
+  &__top-left {
+    text-align: left;
+  }
+  &__download {
+    padding-top: 38px;
+    a {
+      color: blue;
+    }
+  }
+  &__top-center {
+    text-align: center;
+  }
+  &__top-text {
+    max-width: 510px;
+    margin-bottom: 20px;
+    span {
+      text-transform: uppercase;
+    }
+  }
+  &__top-bottom {
+    text-transform: uppercase;
+    max-width: 500px;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    line-height: 19px;
+    color: #7C8696;
   }
 }

@@ -7,246 +7,687 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Грузоперевозки</title>
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-   <div class="wrapper">
+  <div class="wrapper">
 
-     <header class="header">
-       <div class="container">
-         <div class="header__inner">
-           <div class="header__top">
-             <a class="logo" href="#">
-               <img src="images/logo.png" alt="Логотип">
-             </a>
-             <nav class="menu">
-               <ul class="menu__list">
-                 <li class="menu__list-item">
-                   <a class="menu__list-link" href="#">Услуги </a>
-                 </li>
-                 <li class="menu__list-item">
-                   <a class="menu__list-link" href="#">Калькулятор</a>
-                 </li>
-                 <li class="menu__list-item">
-                   <a class="menu__list-link" href="#">Как мы работаем</a>
-                 </li>
-                 <li class="menu__list-item">
-                   <a class="menu__list-link" href="#">Отзывы</a>
-                 </li>
-                 <li class="menu__list-item">
-                   <a class="menu__list-link" href="#">Контакты</a>
-                 </li>
-               </ul>
-             </nav>
-             <div class="contacts">
-               <div class="contacts__phone">
-                 <img src="images/icons/phone-icon.svg" alt="Телефон">
-                 <a href="tel:+79036526722">+7 (903) 652 67 22</a>
-               </div>
-               <div class="contacts__email">
-                 <img src="images/icons/email-icon.svg" alt="Почта">
-                 <a href="mailto:manager@mtk-logistics.ru">manager@mtk-logistics.ru</a>
-               </div>
-             </div>
-           </div>
-           <div class="header__bottom">
-             <div class="header__content">
-               <h1 class="header__title">
-                 Все виды грузоперевозок
-               </h1>
-               <p class="header__text">
-                 Мы бережно доставим любой груз от 1 тонны до 20 тонн в любую точку страны!
-               </p>
-               <ul class="header__bottom-list" type="disc">
-                 <li class="header__bottom-item">скоропортящиеся</li>
-                 <li class="header__bottom-item">крупногабаритные</li>
-                 <li class="header__bottom-item">негабаритные грузы</li>
-               </ul>
-               <a class="header__bottom-link" href="#">
-                 Рассчитать стоимость
-               </a>
-             </div>
-             <div class="header__picture">
-               <img src="images/truck.png" alt="Машина">
-             </div>
-           </div>
-         </div>
-       </div>
-     </header>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__top">
+            <a class="logo" href="#">
+              <img src="images/logo.png" alt="Логотип">
+            </a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Услуги </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Калькулятор</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Как мы работаем</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Отзывы</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="contacts">
+              <div class="contacts__phone">
+                <img src="images/icons/phone-icon.svg" alt="Телефон">
+                <a href="tel:+79036526722">+7 (903) 652 67 22</a>
+              </div>
+              <div class="contacts__email">
+                <img src="images/icons/email-icon.svg" alt="Почта">
+                <a href="mailto:manager@mtk-logistics.ru">manager@mtk-logistics.ru</a>
+              </div>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <div class="header__content">
+              <h1 class="header__title">
+                Все виды грузоперевозок
+              </h1>
+              <p class="header__text">
+                Мы бережно доставим любой груз от 1 тонны до 20 тонн в любую точку страны!
+              </p>
+              <ul class="header__bottom-list" type="disc">
+                <li class="header__bottom-item">скоропортящиеся</li>
+                <li class="header__bottom-item">крупногабаритные</li>
+                <li class="header__bottom-item">негабаритные грузы</li>
+              </ul>
+              <a class="header__bottom-link" href="#">
+                Рассчитать стоимость
+              </a>
+            </div>
+            <div class="header__picture">
+              <img src="images/truck.png" alt="Машина">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-     <main class="page">
-       
+    <main class="page">
+
       <section class="order" id="order">
-         <div class="container">
-           <div class="order__inner">
-             <div class="order__text">
-               <div class="order__title">
-                 Быстрый заказ услуг
-               </div>
-               <div class="order__subtitle">
-                 Заполните, пожалуйста, форму
-               </div>
-             </div>
-             <form class="order__form">
-               <input class="order__name" type="text" placeholder="Виктор" required>
-               <input class="order__number" type="tel" placeholder="+7 (_ _ _)  _ _ _  _ _  _ _" required>
-               <button class="order__btn" type="submit">Перезвоните мне</button>
-             </form>
-           </div>
-         </div>
-       </section>
+        <div class="container">
+          <div class="order__inner">
+            <div class="order__text">
+              <div class="order__title">
+                Быстрый заказ услуг
+              </div>
+              <div class="order__subtitle">
+                Заполните, пожалуйста, форму
+              </div>
+            </div>
+            <form class="order__form">
+              <input class="order__name" type="text" placeholder="Виктор" required>
+              <input class="order__number" type="tel" placeholder="+7 (_ _ _)  _ _ _  _ _  _ _" required>
+              <button class="order__btn" type="submit">Перезвоните мне</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
-       <section class="services">
-         <div class="container">
-           <div class="services__inner">
-             <div class="services__text">
-               <p class="services__text-item">
-                 Мы — межрегиональная транспортная компания
-                 MTK-logistics.
-                 Предоставляем услуги по перевозке всех видов грузов по Воронежу и России. Основной принцип нашей
-                 работы — надёжность и точность. Предлагаем
-                 сотрудничество в сфере грузоперевозок по выгодным условиям.
-               </p>
-               <p class="services__text-item">
-                 Мы бережно доставим любой груз от 1 тонны до 20 тонн в любую точку страны! С нами, можно спать спокойно
-                 и не переживать за сохранность груза, потому что мы несем полную материальную ответственность.
-               </p>
-             </div>
-             <h2 class="services__title">
-               Всегда к вашим услугам собственный и наёмный транспорт
-             </h2>
-             <div class="services__box">
-               <div class="services__item">
-                 <div class="services__item-content">
-                   <h4 class="services__item-title">
-                     Грузоперевозки 
-                     по
-                     Воронежу и области
-                   </h4>
-                   <a class="services__item-details" href="#">
-                     Подробнее
-                   </a>
-                   <a class="services__item-order" href="#order">
-                     Заказать услугу
-                   </a>
-                 </div>
-                 <div class="services__item-decor">
-                   <img src="images/decor/1.svg" alt="Декор">
-                 </div>
-               </div>
-               <div class="services__item">
-                 <div class="services__item-content">
-                   <h4 class="services__item-title">
-                     Междугородние перевозки от 1 до 20 тонн
-                   </h4>
-                   <a class="services__item-details" href="#">
-                     Подробнее
-                   </a>
-                   <a class="services__item-order" href="#order">
-                     Заказать услугу
-                   </a>
-                 </div>
-                 <div class="services__item-decor">
-                   <img src="images/decor/2.svg" alt="Декор">
-                 </div>
-               </div>
-               <div class="services__item">
-                 <div class="services__item-content">
-                   <h4 class="services__item-title">
-                     Доставка сборных грузов
-                     / догрузом /
-                     попутным грузом
-                   </h4>
-                   <a class="services__item-details" href="#">
-                     Подробнее
-                   </a>
-                   <a class="services__item-order" href="#order">
-                     Заказать услугу
-                   </a>
-                 </div>
-                 <div class="services__item-decor">
-                   <img src="images/decor/3.svg" alt="Декор">
-                 </div>
-               </div>
-               <div class="services__item">
-                 <div class="services__item-content">
-                   <h4 class="services__item-title">
-                     Рефрежираторные,
-                     температурные
-                     перевозки
-                   </h4>
-                   <a class="services__item-details" href="#">
-                     Подробнее
-                   </a>
-                   <a class="services__item-order" href="#order">
-                     Заказать услугу
-                   </a>
-                 </div>
-                 <div class="services__item-decor">
-                   <img src="images/decor/4.svg" alt="Декор">
-                 </div>
-               </div>
-               <div class="services__item">
-                 <div class="services__item-content">
-                   <h4 class="services__item-title">
-                     Перевозка
-                     опасных
-                     грузов
-                   </h4>
-                   <a class="services__item-details" href="#">
-                     Подробнее
-                   </a>
-                   <a class="services__item-order" href="#order">
-                     Заказать услугу
-                   </a>
-                 </div>
-                 <div class="services__item-decor">
-                   <img src="images/decor/5.svg" alt="Декор">
-                 </div>
-               </div>
-               <div class="services__item services__last">
-                   <h4 class="services__item-title">
-                     Не знаете какой тип перевозок подойдёт именно Вам?
-                   </h4>
-                 <div class="services__item-form">
-                   <p class="services__item-text">
-                     Заполните форму и лучшие менеджеры ответят на все Ваши вопросы
-                   </p>
-                   <a class="services__item-order" href="#order">
-                     Заполнить форму связи
-                   </a>
-                 </div>
-               </div>
-             </div>
-             <p class="services__text">
-               Мы бережно доставим любой груз от 1 тонны до 20 тонн в любую точку страны! С нами, можно спать спокойно и
-               не переживать за сохранность груза, потому что мы несем полную материальную ответственность.
-             </p>
-           </div>
-         </div>
-       </section>
+      <section class="services">
+        <div class="container">
+          <div class="services__inner">
+            <div class="services__text">
+              <p class="services__text-item">
+                Мы — межрегиональная транспортная компания
+                MTK-logistics.
+                Предоставляем услуги по перевозке всех видов грузов по Воронежу и России. Основной принцип нашей
+                работы — надёжность и точность. Предлагаем
+                сотрудничество в сфере грузоперевозок по выгодным условиям.
+              </p>
+              <p class="services__text-item">
+                Мы бережно доставим любой груз от 1 тонны до 20 тонн в любую точку страны! С нами, можно спать спокойно
+                и не переживать за сохранность груза, потому что мы несем полную материальную ответственность.
+              </p>
+            </div>
+            <h2 class="services__title">
+              Всегда к вашим услугам собственный и наёмный транспорт
+            </h2>
+            <div class="services__box">
+              <div class="services__item">
+                <div class="services__item-content">
+                  <h4 class="services__item-title">
+                    Грузоперевозки 
+                    по
+                    Воронежу и области
+                  </h4>
+                  <a class="services__item-details" href="#">
+                    Подробнее
+                  </a>
+                  <a class="services__item-order" href="#order">
+                    Заказать услугу
+                  </a>
+                </div>
+                <div class="services__item-decor">
+                  <img src="images/decor/1.svg" alt="Декор">
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item-content">
+                  <h4 class="services__item-title">
+                    Междугородние перевозки от 1 до 20 тонн
+                  </h4>
+                  <a class="services__item-details" href="#">
+                    Подробнее
+                  </a>
+                  <a class="services__item-order" href="#order">
+                    Заказать услугу
+                  </a>
+                </div>
+                <div class="services__item-decor">
+                  <img src="images/decor/2.svg" alt="Декор">
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item-content">
+                  <h4 class="services__item-title">
+                    Доставка сборных грузов
+                    / догрузом /
+                    попутным грузом
+                  </h4>
+                  <a class="services__item-details" href="#">
+                    Подробнее
+                  </a>
+                  <a class="services__item-order" href="#order">
+                    Заказать услугу
+                  </a>
+                </div>
+                <div class="services__item-decor">
+                  <img src="images/decor/3.svg" alt="Декор">
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item-content">
+                  <h4 class="services__item-title">
+                    Рефрежираторные,
+                    температурные
+                    перевозки
+                  </h4>
+                  <a class="services__item-details" href="#">
+                    Подробнее
+                  </a>
+                  <a class="services__item-order" href="#order">
+                    Заказать услугу
+                  </a>
+                </div>
+                <div class="services__item-decor">
+                  <img src="images/decor/4.svg" alt="Декор">
+                </div>
+              </div>
+              <div class="services__item">
+                <div class="services__item-content">
+                  <h4 class="services__item-title">
+                    Перевозка
+                    опасных
+                    грузов
+                  </h4>
+                  <a class="services__item-details" href="#">
+                    Подробнее
+                  </a>
+                  <a class="services__item-order" href="#order">
+                    Заказать услугу
+                  </a>
+                </div>
+                <div class="services__item-decor">
+                  <img src="images/decor/5.svg" alt="Декор">
+                </div>
+              </div>
+              <div class="services__item services__last">
+                <h4 class="services__item-title">
+                  Не знаете какой тип перевозок подойдёт именно Вам?
+                </h4>
+                <div class="services__item-form">
+                  <p class="services__item-text">
+                    Заполните форму и лучшие менеджеры ответят на все Ваши вопросы
+                  </p>
+                  <a class="services__item-order" href="#order">
+                    Заполнить форму связи
+                  </a>
+                </div>
+              </div>
+            </div>
+            <p class="services__text">
+              Мы бережно доставим любой груз от 1 тонны до 20 тонн в любую точку страны! С нами, можно спать спокойно и
+              не переживать за сохранность груза, потому что мы несем полную материальную ответственность.
+            </p>
+          </div>
+        </div>
+      </section>
 
-       <section class="car-park">
-         <div class="container">
-           <div class="car-park__inner">
-             <h3 class="car-park__title">
-               Наш автопарк
-             </h3>
-             <p class="car-park__subtitle">
-               Собственный и наёмный транспорт: фуры и газели
-             </p>
-           </div>
-         </div>
-       </section>
+      <section class="car-park">
+        <div class="container">
+          <div class="car-park__inner">
+            <h3 class="car-park__title">
+              Наш автопарк
+            </h3>
+            <p class="car-park__subtitle">
+              Собственный и наёмный транспорт: фуры и газели
+            </p>
+            <ul class="car-park__list">
+              <li class="car-park__item">Полуприцеп</li>
+              <li class="car-park__item">Тентованные</li>
+              <li class="car-park__item">Тентовый транспорт</li>
+              <li class="car-park__item">Открытые </li>
+              <li class="car-park__item">Бортовые</li>
+              <li class="car-park__item">Контейнеровозы</li>
+              <li class="car-park__item">Изотермические</li>
+              <li class="car-park__item">Рефрижераторы</li>
+              <li class="car-park__item">Цельнометалические</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-     </main>
+      <section class="benefits">
+        <div class="container">
+          <div class="benefits__inner">
+            <h2 class="benefits__title">
+              Почему выбирают нас
+            </h2>
+            <div class="benefits__items">
+              <div class="benefits__item">
+                <h3 class="benefits__item-content">
+                  Предложим оптимальную
+                  стоимость перевозки
+                </h3>
+                <div class="benefits__item-decor">
+                  <img src="images/decor/6.svg" alt="Декор">
+                </div>
+              </div>
+              <div class="benefits__item">
+                <h3 class="benefits__item-content">
+                  Подберём транспорт
+                  под
+                  вашу задачу
+                </h3>
+                <div class="benefits__item-decor">
+                  <img src="images/decor/7.svg" alt="Декор">
+                </div>
+              </div>
+              <div class="benefits__item">
+                <h3 class="benefits__item-content">
+                  Предоставим услуги
+                  страхования груза
+                </h3>
+                <div class="benefits__item-decor">
+                  <img src="images/decor/8.svg" alt="Декор">
+                </div>
+              </div>
+              <div class="benefits__item">
+                <h3 class="benefits__item-content">
+                  Быстро оформим
+                  все документы. Работаем с НДС
+                </h3>
+                <div class="benefits__item-decor">
+                  <img src="images/decor/9.svg" alt="Декор">
+                </div>
+              </div>
+            </div>
+            <p class="benefits__text">
+              Мы — межрегиональная транспортная компания
+              MTK-logistics.
+              Предоставляем услуги по перевозке всех видов грузов по Воронежу и России. Основной принцип нашей работы —
+              надёжность и точность. Предлагаем
+              сотрудничество в сфере грузоперевозок по выгодным условиям.
+            </p>
+            <div class="progress">
+              <div class="progress__item">
+                <h4 class="progress__number">9352</h4>
+                <p class="progress__desk">тонн груза ежедневно</p>
+              </div>
+              <div class="progress__item">
+                <h4 class="progress__number">93</h4>
+                <p class="progress__desk">единиц транспорта в пути</p>
+              </div>
+              <div class="progress__item">
+                <h4 class="progress__number">197</h4>
+                <p class="progress__desk">городов доставки</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-   </div>
+      <section class="calculator">
+        <div class="container">
+          <div class="calculator__inner">
+            <div class="calculator__top">
+              <h2 class="calculator__title">
+                Калькулятор стоимости
+              </h2>
+              <div class="calculator__text">
+                Калькулятор автоматически рассчитывает стоимость, исходя из тарифов за км, которые
+                обычно действуют в нашей транспортной компании. В действительности цену сможет
+                рассчитать менеджер индивидуально, погрешность может составлять от 5 до 15%
+              </div>
+            </div>
+            <div class="calculator__box">
+              <form class="calculator__form-left">
+                <div class="calculator__input-box">
+                  <div class="calculator__input-from">
+                    <span class="calculator__span">Откуда</span>
+                    <input class="calculator__input" id="s1" type="text" placeholder="Воронеж" autocomplete="off">
+                  </div>
+                  <button class="calculator__input-change" type="button" id="swap" value="Swap">
+                    <img src="images/icons/arrows-change.svg" alt="">
+                  </button>
+                  <div class="calculator__input-to">
+                    <span class="calculator__span">Куда</span>
+                    <input class="calculator__input" id="s2" type="text" placeholder="Санкт-Петербург"
+                      autocomplete="off">
+                  </div>
+                </div>
+                <div class="calculator__checkboxes">
+                  <div class="type type__first">
+                    <span class="calculator__span"> Тип груза </span>
+                    <div class="type__box">
+                      <div class="type__box-item">
+                        <input class="type__input" type="checkbox" id="temp">
+                        <label for="temp">Температурный</label>
+                      </div>
+                      <div class="type__box-item">
+                        <input class="type__input" type="checkbox" id="danger" checked>
+                        <label for="danger">Опасный</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="type">
+                    <span class="calculator__span">Дополнительные услуги</span>
+                    <div class="type__box">
+                      <div class="type__box-item">
+                        <input class="type__input" type="checkbox" id="insurance">
+                        <label for="insurance">Страхование</label>
+                      </div>
+                      <div class="type__box-item">
+                        <input class="type__input" type="checkbox" id="delivery" checked>
+                        <label for="delivery">Срочная доставка</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <form class="calculator__form-right">
+                <div class="calculator__input-box">
+                  <div class="calculator__input-from">
+                    <span class="calculator__span">Вес груза (т.)</span>
+                    <input class="calculator__input" type="text" placeholder="5 тонн" autocomplete="off" required>
+                  </div>
+                  <div class="calculator__input-to">
+                    <span class="calculator__span">Объём (м3)</span>
+                    <input class="calculator__input" type="text" placeholder="1000 м3г"
+                      autocomplete="off" required>
+                  </div>
+                </div>
+                <div class="calculator__input-box">
+                  <div class="calculator__input-from">
+                    <span class="calculator__span">Дополнительные параметры</span>
+                    <input class="calculator__input" type="text" placeholder="Длинна груза, кол-во паллет и тд."
+                      autocomplete="off">
+                  </div>
+                  <button class="calculator__count" type="submit">
+                    Рассчитать стоимость
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="calculator__bottom">
+              <p class="calculator__price">
+                Предварительная стоимость услуги: 22 000 руб
+              </p>
+              <a class="calculator__bottom-link" href="#order">
+                Связаться с меденжером для заказа
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+      <section class="method">
+        <div class="container">
+          <h2 class="method__title">
+            Как мы работаем
+          </h2>
+          <ol class="method__list">
+            <li class="method__item method__first">
+              <div class="method__item-icon">
+                <img src="images/icons/method/1.svg" alt="">
+              </div>
+              <p class="method__item-text">
+                Ваш звонок или заявка на сайте
+              </p>
+            </li>
+            <li class="method__item method__second">
+              <div class="method__item-icon">
+                <img src="images/icons/method/2.svg" alt="">
+              </div>
+              <p class="method__item-text">
+                Обработка данных менеджерами
+              </p>
+            </li>
+            <li class="method__item method__third">
+              <div class="method__item-icon">
+                <img src="images/icons/method/3.svg" alt="">
+              </div>
+              <p class="method__item-text">
+                Заключение договора
+              </p>
+            </li>
+            <li class="method__item method__forth">
+              <div class="method__item-icon">
+                <img src="images/icons/method/4.svg" alt="">
+              </div>
+              <p class="method__item-text">
+                Подача транспорта
+              </p>
+            </li>
+            <div class="method__item method__fifth">
+              <div class="method__item-icon">
+                <img src="images/icons/method/5.svg" alt="">
+              </div>
+              <p class="method__item-text">
+                Доставка вашего груза
+              </p>
+            </div>
+            <li class="method__item method__six">
+              <div class="method__item-icon">
+                <img src="images/icons/method/6.svg" alt="">
+              </div>
+              <p class="method__item-text">
+                Оформление документов и оплата
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="comments">
+        <div class="container">
+          <div class="comments__inner">
+            <h2 class="comments__title">
+              Что говорят наши клиенты
+            </h2>
+            <a class="comments__add" href="#">
+              Добавить отзыв
+            </a>
+            <div class="comments__arrows">
+              <div class="comments__arrows-left comments__arrow">
+                <svg width="30" height="15" viewBox="0 0 30 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.292887 8.18377C-0.0976381 7.79324 -0.0976401 7.16008 0.292883 6.76955L6.65682 0.405571C7.04735 0.0150449 7.68051 0.0150429 8.07104 0.405566C8.46156 0.796089 8.46156 1.42925 8.07104 1.81978L2.41421 7.47665L8.07108 13.1335C8.4616 13.524 8.46161 14.1572 8.07108 14.5477C7.68056 14.9382 7.0474 14.9382 6.65687 14.5477L0.292887 8.18377ZM29.933 8.47656L0.999996 8.47666L0.999989 6.47666L29.933 6.47656L29.933 8.47656Z"
+                    fill="#3284FF" />
+                </svg>
+              </div>
+              <span class="pagingInfo"></span>
+              <div class="comments__arrows-right comments__arrow">
+                <svg width="31" height="15" viewBox="0 0 31 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M30.5731 8.18377C30.9636 7.79324 30.9636 7.16008 30.5731 6.76955L24.2091 0.405571C23.8186 0.0150449 23.1855 0.0150429 22.7949 0.405566C22.4044 0.796089 22.4044 1.42925 22.7949 1.81978L28.4518 7.47665L22.7949 13.1335C22.4044 13.524 22.4044 14.1572 22.7949 14.5477C23.1854 14.9382 23.8186 14.9382 24.2091 14.5477L30.5731 8.18377ZM0.93298 8.47656L29.866 8.47666L29.866 6.47666L0.932987 6.47656L0.93298 8.47656Z"
+                    fill="#3284FF" />
+                </svg>
+              </div>
+            </div>
+            <div class="comments__pages slideshow">
+            <div class="comments__box slide-placeholder">
+              <div class="comments__item">
+                <p class="comments__text">
+                  Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст
+                  отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва
+                </p>
+                <div class="comments__bottom">
+                  <p class="comments__date">
+                    26 мая 2021
+                  </p>
+                  <p class="comments__name">
+                    Анжелика Трофимова
+                  </p>
+                </div>
+              </div>
+              <div class="comments__item">
+                <p class="comments__text">
+                  Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст
+                  отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва
+                </p>
+                <div class="comments__bottom">
+                  <p class="comments__date">
+                    26 мая 2021
+                  </p>
+                  <p class="comments__name">
+                    Анжелика Трофимова
+                  </p>
+                </div>
+              </div>
+              <div class="comments__item">
+                <p class="comments__text">
+                  Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст
+                  отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва
+                </p>
+                <div class="comments__bottom">
+                  <p class="comments__date">
+                    26 мая 2021
+                  </p>
+                  <p class="comments__name">
+                    Анжелика Трофимова
+                  </p>
+                </div>
+              </div>
+              <div class="comments__item">
+                <p class="comments__text">
+                  Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст
+                  отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва
+                </p>
+                <div class="comments__bottom">
+                  <p class="comments__date">
+                    26 мая 2021
+                  </p>
+                  <p class="comments__name">
+                    Анжелика Трофимова
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="comments__box slide-placeholder">
+              <div class="comments__item">
+                <p class="comments__text">
+                  Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст
+                  отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва
+                </p>
+                <div class="comments__bottom">
+                  <p class="comments__date">
+                    26 мая 2021
+                  </p>
+                  <p class="comments__name">
+                    Анжелика Трофимова
+                  </p>
+                </div>
+              </div>
+              <div class="comments__item">
+                <p class="comments__text">
+                  Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст
+                  отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва
+                </p>
+                <div class="comments__bottom">
+                  <p class="comments__date">
+                    26 мая 2021
+                  </p>
+                  <p class="comments__name">
+                    Анжелика Трофимова
+                  </p>
+                </div>
+              </div>
+              <div class="comments__item">
+                <p class="comments__text">
+                  Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст
+                  отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва
+                </p>
+                <div class="comments__bottom">
+                  <p class="comments__date">
+                    26 мая 2021
+                  </p>
+                  <p class="comments__name">
+                    Анжелика Трофимова
+                  </p>
+                </div>
+              </div>
+              <div class="comments__item">
+                <p class="comments__text">
+                  Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст
+                  отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва
+                </p>
+                <div class="comments__bottom">
+                  <p class="comments__date">
+                    26 мая 2021
+                  </p>
+                  <p class="comments__name">
+                    Анжелика Трофимова
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="comments__box slide-placeholder">
+              <div class="comments__item">
+                <p class="comments__text">
+                  Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст
+                  отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва
+                </p>
+                <div class="comments__bottom">
+                  <p class="comments__date">
+                    26 мая 2021
+                  </p>
+                  <p class="comments__name">
+                    Анжелика Трофимова
+                  </p>
+                </div>
+              </div>
+              <div class="comments__item">
+                <p class="comments__text">
+                  Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст
+                  отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва
+                </p>
+                <div class="comments__bottom">
+                  <p class="comments__date">
+                    26 мая 2021
+                  </p>
+                  <p class="comments__name">
+                    Анжелика Трофимова
+                  </p>
+                </div>
+              </div>
+              <div class="comments__item">
+                <p class="comments__text">
+                  Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст
+                  отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва
+                </p>
+                <div class="comments__bottom">
+                  <p class="comments__date">
+                    26 мая 2021
+                  </p>
+                  <p class="comments__name">
+                    Анжелика Трофимова
+                  </p>
+                </div>
+              </div>
+              <div class="comments__item">
+                <p class="comments__text">
+                  Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст
+                  отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва Текст отзыва
+                </p>
+                <div class="comments__bottom">
+                  <p class="comments__date">
+                    26 мая 2021
+                  </p>
+                  <p class="comments__name">
+                    Анжелика Трофимова
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
   </script> -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

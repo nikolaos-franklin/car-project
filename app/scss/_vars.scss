@@ -38,3 +38,29 @@ $title: #2E2E2E;
     sans serif;
   font-weight: 400;
 }
+
+%title {
+  @extend %montserrat-700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #2E2E2E;
+}
+
+%text {
+  @extend %montserrat-400;
+  margin: 0 auto;
+  max-width: 1120px;
+  line-height: 28px;
+  font-size: 20px;
+}
+
+%link {
+  @extend %montserrat-600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #3284FF;
+  border: none;
+  border-bottom: 1px solid #3284FF;
+  cursor: pointer;
+  padding: 5px 0;
+}

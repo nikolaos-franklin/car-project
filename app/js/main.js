@@ -1,4 +1,10 @@
 $(function(){
+
+  document.querySelector('.burger').addEventListener('click', function(){
+  document.querySelector('.burger span').classList.toggle('active');
+  document.querySelector('.menu__list').classList.toggle('menu__list--active');
+  document.querySelector('.contacts').classList.toggle('contacts--active');
+})
  
 $('#swap').click(function(){
     var v1 = $('#s1').val(),

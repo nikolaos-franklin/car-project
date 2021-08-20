@@ -517,6 +517,9 @@
        &__copy {
          margin-bottom: 20px;
        }
+       &__download-link{
+         margin-bottom: 10px;
+       }
      }
    
 }
@@ -614,6 +617,16 @@
      }
      &__btn {
        margin: 0 auto;
+     }
+   }
+   .footer {
+     &__top-center {
+       font-size: 13px;
+       line-height: 18px;
+     }
+     &__download {
+       font-size: 15px;
+       line-height: 18px;
      }
    }
 }

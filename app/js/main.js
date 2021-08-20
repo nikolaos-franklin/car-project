@@ -18,11 +18,17 @@ $('.scrollto a').on('click', function() {
 
   // анимация для бургера
 
-  document.querySelector('.burger').addEventListener('click', function(){
-  document.querySelector('.burger span').classList.toggle('active');
-  document.querySelector('.menu__list').classList.toggle('menu__list--active');
-  document.querySelector('.contacts').classList.toggle('contacts--active');
-})
+  $('.burger').on('click', function(){
+    $('.burger span').toggleClass('active');
+    $('.menu__list').toggleClass('menu__list--active');
+    $('.contacts').toggleClass('contacts--active');  
+  });
+
+  $('.menu__list-link').on('click', function(){
+    $('.burger span').removeClass('active');
+    $('.menu__list').removeClass('menu__list--active');
+    $('.contacts').removeClass('contacts--active');
+  });
  
 $('#swap').click(function(){
     var v1 = $('#s1').val(),

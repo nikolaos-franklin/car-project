@@ -111,6 +111,16 @@
   &__phone {
     margin-bottom: 13px;
     position: relative;
+    &::after {
+      content: '';
+      background-image: url('../images/icons/arrow-down-white.svg');
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 8px;
+      left: 195px;
+      width: 10px;
+      height: 10px;
+    }
   }
   &__adress {
     padding-top: 13px;
@@ -751,7 +761,7 @@
   &__download {
     padding-top: 38px;
     a {
-      color: blue;
+      color: #3284ff;
     }
   }
   &__top-center {

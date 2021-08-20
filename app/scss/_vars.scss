@@ -7,6 +7,7 @@ $md3: 767.98;
 $md4: 479.98;
 
 $mainColor: #353535;
+$accentColor: #1552ae;
 $title: #2E2E2E;
 
 %montserrat-800 {
@@ -58,9 +59,9 @@ $title: #2E2E2E;
   @extend %montserrat-600;
   font-size: 17px;
   line-height: 21px;
-  color: #3284FF;
+  color: $accentColor;
   border: none;
-  border-bottom: 1px solid #3284FF;
+  border-bottom: 1px solid #1552ae;
   cursor: pointer;
   padding: 5px 0;
 }

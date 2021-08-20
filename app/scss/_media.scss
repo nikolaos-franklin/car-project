@@ -263,6 +263,8 @@
     background-color: transparent;
     border: none;
     z-index: 100;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
   }
 
   .burger span,
@@ -271,7 +273,7 @@
     width: 100%;
     position: absolute;
     height: 3px;
-    background: #3284FF;
+    background: $accentColor;
     display: block;
     transition: .3s;
     border-radius: 5px;
@@ -603,11 +605,6 @@
    }
    .calculator {
      padding: 75px 10px;
-   }
-   .comments {
-     &__add {
-       top: 80px;
-     }
    }
    .order {
      &__form {

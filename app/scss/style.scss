@@ -69,7 +69,7 @@
     line-height: 21px;
     color: #FFFFFF;
     padding: 20px 35px;
-    background: #3284FF;
+    background: $accentColor;
     border-radius: 5px;
   }
   &__picture {
@@ -175,6 +175,7 @@
   }
   &__btn {
     @extend %link;
+    background-color: transparent;
   }
 }
 
@@ -490,7 +491,7 @@
     font-size: 17px;
     line-height: 21px;
     color: #FFFFFF;
-    background: #3284FF;
+    background: $accentColor;
     border-radius: 0px 5px 5px 0px;
     padding: 19.5px 48px;
     border: none;
@@ -510,6 +511,7 @@
   }
   &__bottom-link {
     @extend %link;
+    color: #fff;
     text-align: right;
   }
 }
@@ -631,6 +633,7 @@
   &__add {
     left: auto;
     @extend %link;
+    color: #fff;
     position: absolute;
     right: 0;
     top: 7px;

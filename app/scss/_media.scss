@@ -690,6 +690,11 @@
 }
 
 @media (max-width: 430px) {
+  .header {
+    &__top {
+      margin-bottom: 20px;
+    }
+    
   .car-park {
     &__list {
       padding-left: 50px;
@@ -735,6 +740,7 @@
 }
 
 @media (max-width: 330px) {
+  }
   .calculator {
     &__input {
       width: 280px;

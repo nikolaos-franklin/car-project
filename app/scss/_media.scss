@@ -85,7 +85,7 @@
       display: flex;
       padding-left: 0;
       padding: 20px 10px;
-      background: #3284FF;
+      background: $accentColor;
     }
 
     &__list-item+.menu__list-item {
@@ -121,6 +121,9 @@
     &__top-text,
     &__top-bottom {
       margin: 0 auto;
+    }
+    &__top-text:first-child {
+      margin-bottom: 20px;
     }
 
     .contacts {
@@ -307,7 +310,7 @@
     display: block;
     position: absolute;
     right: 15px;
-    top: 0px;
+    top: -12px;
     width: 50px;
     height: 30px;
     cursor: pointer;
@@ -369,14 +372,15 @@
 
   .header {
     &__top {
-      padding-top: 30px;
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
 
     &__contacts {
-      position: absolute;
+      position: absolute !important;
       flex-direction: column;
       left: 40px;
-      bottom: 110px;
+      bottom: 10%;
 
       &__email {
         padding-top: 15px;
@@ -449,7 +453,7 @@
 
   .menu {
     margin-left: -10px;
-    position: absolute;
+    position: absolute !important; 
     width: 100%;
 
     &__list {
@@ -476,12 +480,16 @@
 
     &__list-item {
       text-align: left;
+      width: 100%;
+    }
+    &__list-link {
+      text-align: left;
       padding: 10px 0 13px 65px;
       color: #FFFFFF;
       font-size: 15px;
       width: 100%;
       cursor: pointer;
-
+      display: block;
       &:hover {
         background: #3284FF;
         color: #2E2E2E;

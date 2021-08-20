@@ -8,9 +8,8 @@
 
 .header {
   padding: 38px 0 170px;
-  height: 100vh;
-  background: rgb(49, 61, 214);
-  background: radial-gradient(circle, rgba(49, 61, 214, 0.7595413165266106) 0%, rgba(185, 32, 32, 1) 100%);
+  min-height: 100vh;
+  background: linear-gradient(0deg, rgb(25, 31, 107) 19%, rgb(120, 26, 26));
 
   &__top {
     display: flex;
@@ -89,6 +88,20 @@
   &__picture {
     background: radial-gradient(50% 50% at 50% 50%, rgba(255, 50, 50, 0.5) 0%, rgba(156, 35, 41, 0) 100%);
   }
+  // .sticky {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   background-color: #5f1212;
+  //   padding-left: 15px;
+  //   padding-right: 15px;
+  //   z-index: 100;
+  // }
+
+  // .sticky+.header__bottom {
+  //   padding-top: 100px;
+  // }
 }
 
 .menu {
@@ -105,6 +118,18 @@
     line-height: 21px;
     color: #E3E3E3;
     @extend %montserrat-500;
+    transition: all .3s;
+    &:hover {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+        0 0 50px rgba(255, 255, 255, .8),
+        0 0 75px rgba(255, 255, 255, .6),
+        0 0 76px rgba(255, 255, 255, .4),
+        0 0 77px rgba(255, 255, 255, .5),
+        0 0 78px rgba(255, 255, 255, .4),
+        0 0 79px rgba(255, 255, 255, .3),
+        0 0 80px rgba(255, 255, 255, .2),
+        0 0 85px rgba(255, 255, 255, .1);
+    }
   }
 }
 
@@ -131,17 +156,6 @@
   &__phone {
     margin-bottom: 13px;
     position: relative;
-
-    &::after {
-      content: '';
-      background-image: url('../images/icons/arrow-down-white.svg');
-      background-repeat: no-repeat;
-      position: absolute;
-      top: 8px;
-      left: 195px;
-      width: 10px;
-      height: 10px;
-    }
   }
 
   &__adress {
@@ -322,7 +336,7 @@
 
 .car-park {
   padding: 105px 0 145px;
-  background: linear-gradient(135deg, rgb(187, 37, 37) 6%, rgb(58, 85, 187));
+  background: linear-gradient(315deg, rgb(25, 31, 107) 19%, rgb(120, 26, 26));
   position: relative;
 
   &::after {
@@ -453,7 +467,7 @@
 
 .calculator {
   padding: 77px 110px;
-  background: linear-gradient(0deg, rgb(187, 37, 37), rgb(58, 85, 187));
+  background: linear-gradient(180deg, rgb(25, 31, 107) 19%, rgb(120, 26, 26));
 
   &__box {
     text-align: left;
@@ -598,6 +612,18 @@
     @extend %link;
     color: #fff;
     text-align: right;
+    transition: all .3s;
+    &:hover {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+      0 0 50px rgba(255, 255, 255, .8),
+      0 0 75px rgba(255, 255, 255, .6),
+      0 0 76px rgba(255, 255, 255, .4),
+      0 0 77px rgba(255, 255, 255, .5),
+      0 0 78px rgba(255, 255, 255, .4),
+      0 0 79px rgba(255, 255, 255, .3),
+      0 0 80px rgba(255, 255, 255, .2),
+      0 0 85px rgba(255, 255, 255, .1);
+    }
   }
 }
 
@@ -751,7 +777,7 @@
 
 .comments {
   padding: 100px 0;
-  background: linear-gradient(225deg, rgb(187, 44, 44), rgb(36, 40, 169));
+  background: linear-gradient(135deg, rgb(46, 53, 144) 16%, rgb(120, 26, 26));
 
   &__inner {
     position: relative;
@@ -905,7 +931,7 @@
 
 .footer {
   padding: 100px 0 65px;
-  background: linear-gradient(180deg, rgb(201, 47, 47), rgb(41, 39, 167));
+  background: linear-gradient(0deg, rgb(25, 31, 107) 19%, rgb(120, 26, 26));
   color: #FFFFFF;
 
   &__top {

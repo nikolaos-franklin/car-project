@@ -40,7 +40,6 @@ $('#swap').click(function(){
   // слайдер
 
  $('.comments__pages').on('init', function(event, slick) {
-    $(this).append('<div class="slideCount"><span class="current"></span> / <span class="total"></span></div>');
     $('.current').text(slick.currentSlide + 1);
     $('.total').text(slick.slideCount);
   })

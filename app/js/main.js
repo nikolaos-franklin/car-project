@@ -1,5 +1,10 @@
 $(function(){
 
+  $(function(){
+  //2. Получить элемент, к которому необходимо добавить маску
+  $("#phone").mask("+7 (9 9 9)  9 9 9  9 9  9 9");
+  });
+
    wow = new WOW(
    {
    boxClass:     'wow',      // default

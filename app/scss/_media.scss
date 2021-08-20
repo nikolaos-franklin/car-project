@@ -1,3 +1,29 @@
+@media (max-width: 1400px) {
+  .calculator {
+    &__top,
+    &__box,
+    &__bottom {
+      flex-direction: column;
+    }
+    &__title {
+      margin-bottom: 25px;
+    }
+    &__text {
+      max-width: 100%;
+    }
+    &__form-left,
+    &__form-right {
+      margin: 0 auto;
+    }
+    &__form-left {
+      margin-bottom: 50px;
+    }
+    &__price {
+      margin-bottom: 25px;
+    }
+  }
+}
+
 @media (max-width: 1300px) {
   .header {
     padding: 0;
@@ -53,6 +79,35 @@
       padding: 0 30px;
     }
   }
+
+  .car-park {
+    &::after {
+      bottom: -6px;
+      width: 200px;
+    }
+  }
+  .footer {
+    &__top {
+     flex-wrap: wrap;
+    } 
+    &__top-left {
+      margin-bottom: 80px;
+    }
+    &__top-center {
+      order: 2;
+      width: 100%;
+    }
+    &__top-text,
+    &__top-bottom {
+      margin: 0 auto;
+    }
+    .contacts {
+      &__phone,
+      &__email {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1024px) {
@@ -75,6 +130,52 @@
     &__list-item {
       padding: 0 15px;
     }
+  }
+  .benefits {
+    padding-top: 135px;
+    &__item {
+      flex-direction: column;
+    }
+    &__item-content {
+      order: 1;
+      text-align: center;
+    }
+    &__item-decor {
+      margin-bottom: 20px;
+    }
+  }
+  .progress {
+    flex-direction: column;
+    &__item:nth-child(2n) {
+      border: none;
+      border-top: 2px solid #DCDCDC;
+      border-bottom: 2px solid #DCDCDC;;
+    }
+    &__item {
+      padding: 25px 0;
+    }
+  }
+  .method {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .method {
+    padding: 135px 0 50px;
+  }
+  .comments {
+    &__title {
+      text-align: left;
+    }
+    &__arrows {
+      justify-content: center;
+    }
+    &__box {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .support {
+    padding-top: 135px;
   }
 }
 
@@ -114,6 +215,39 @@
     &__picture img {
       width: 65%;
     }
+  }
+  .services {
+    padding: 135px 0;
+
+    &__box {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item {
+      margin: 0 auto;
+    }
+  }
+  .benefits {
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .calculator {
+    padding: 75px 15px;
+  }
+  .services__title,
+  .car-park__title,
+  .benefits__title,
+  .calculator__title,
+  .support__title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .benefits__text,
+  .services__text,
+  .calculator__text,
+  .support__text {
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 
@@ -186,7 +320,7 @@
        position: absolute;
        flex-direction: column;
        left: 40px;
-       bottom: 260px;
+       bottom: 110px;
        &__email {
          padding-top: 15px;
        }
@@ -231,18 +365,20 @@
          width: 65%
        }
      }
-   }
-   .contacts {
-     transform: translateY(-430%);
-     transition: all .5s;
-     z-index: 100;
-     &__email {
-       padding-top: 15px;
-     }
-     &--active {
-       transform: translateY(0%);
+     .contacts {
+       transform: translateY(-700%);
        transition: all .5s;
-     }
+       z-index: 100;
+
+       &__email {
+         padding-top: 15px;
+       }
+
+       &--active {
+         transform: translateY(0%);
+         transition: all .5s;
+       }
+   }
    }
    
    .menu {
@@ -264,7 +400,7 @@
        transition: all .3s;
        opacity: 0.97;
        &--active {
-         transform: translateY(-7%);
+         transform: translateY(-8%);
          transition: all .3s;
         }
      }
@@ -281,5 +417,229 @@
          }
        }
    }
+
+   .benefits {
+     &__item-content {
+       font-size: 17px;
+       line-height: 24px;
+     }
+   }
+   .services {
+     &__item {
+       flex-direction: column;
+       text-align: center;
+       padding: 30px;
+     }
+
+     &__item-content {
+       order: 1;
+     }
+
+     &__item-decor {
+       max-width: 300px;
+       margin-bottom: 15px;
+     }
+
+     &__item-details {
+       margin: 0 auto;
+       margin-bottom: 20px;
+     }
+
+     &__item-form {
+       flex-direction: column;
+     }
+
+     &__item-text {
+       margin-bottom: 20px;
+     }
+
+     &__last {
+       padding: 20px;
+     }
+   }
+
+     .car-park {
+       &__list {
+          grid-template-columns: repeat(1, 1fr);
+          padding-left: 80px;
+       }
+       &__item {
+         margin-bottom: 25px;
+         font-size: 15px;
+         line-height: 18px;
+       }
+     }
+
+     .services__title,
+     .car-park__title,
+     .benefits__title,
+     .calculator__title,
+     .support__title,
+     .method__title,
+     .comments__title {
+       font-size: 20px;
+       line-height: 28px;
+     }
+
+     .benefits__text,
+     .services__text,
+     .calculator__text,
+     .support__text {
+       font-size: 15px;
+       line-height: 21px;
+     }
+
+     .footer {
+       .logo {
+         img {
+           margin: 0 auto;
+         }
+       }
+       &__top {
+         flex-direction: column;
+         margin-bottom: 60px;
+        align-items: center;
+       }
+       &__top-left {
+         margin-bottom: 40px;
+       }
+       &__top-center {
+         order: 0;
+         margin-bottom: 50px;
+       }
+       &__top-text {
+         max-width: 100%;
+         margin-bottom: 20px;
+       }
+       &__bottom {
+         flex-direction: column;
+       }
+       &__copy {
+         margin-bottom: 20px;
+       }
+     }
+   
 }
+
+@media (max-width: 640px) {
+  .calculator {
+    &__input-box {
+      flex-direction: column;
+      align-items: end;
+      margin-bottom: 0;
+    }
+    &__input-from {
+      margin-bottom: 15px;
+      input {
+        border-radius: 5px 5px 0px 0px;
+      }
+    }
+    &__input-change {
+      top: 111px;
+    }
+    &__input-to {
+      margin-bottom: 15px;
+      input {
+        border-radius: 0px 0px 5px 5px;
+      }
+    }
+    &__checkboxes {
+      flex-direction: column;
+    }
+     &__form-left {
+       margin-bottom: 15px;
+     }
+     &__count {
+       border-radius: 0px 0px 5px 5px;
+     }
+     &__price {
+       text-align: center;
+     }
+  }
+  .method {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item {
+      margin: 0 auto;
+    }
+  }
+  .comments {
+    &__add {
+      top: 45px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .comments {
+    &__item {
+      padding: 10px 30px 30px 30px;
+    }
+  }
+  .method {
+    &__item-text {
+      font-size: 17px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+   .car-park {
+     &__list {
+       padding-left: 50px;
+     }
+   }
+   .benefits {
+     &__item {
+       padding: 40px 40px 50px 40px;
+     }
+   }
+   .calculator {
+     padding: 75px 10px;
+   }
+   .comments {
+     &__add {
+       top: 80px;
+     }
+   }
+   .order {
+     &__form {
+       max-width: 250px;
+     }
+     &__text {
+       margin: 0 auto;
+       margin-bottom: 30px;
+     }
+     &__btn {
+       margin: 0 auto;
+     }
+   }
+}
+
+@media (max-width: 330px) {
+  .calculator {
+    &__input {
+      width: 280px;
+    }
+  }
+  .method {
+    &__item-icon {
+      img {
+        width: 35px;
+        min-height: 50px;
+      }
+    }
+    &__list {
+      padding-left: 10px;
+    }
+  }
+  .comments {
+    &__item {
+      padding: 10px 20px 15px 20px;
+    }
+  }
+}
+
 

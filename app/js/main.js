@@ -1,5 +1,23 @@
 $(function(){
 
+  // для плавного скролла:
+
+$('.scrollto a').on('click', function() {
+
+    let href = $(this).attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    }, {
+        duration: 700,   // по умолчанию «400» 
+        easing: "swing" // по умолчанию «swing» 
+    });
+
+    return false;
+});
+
+  // анимация для бургера
+
   document.querySelector('.burger').addEventListener('click', function(){
   document.querySelector('.burger span').classList.toggle('active');
   document.querySelector('.menu__list').classList.toggle('menu__list--active');
@@ -12,6 +30,8 @@ $('#swap').click(function(){
     $('#s1').val(v2);
     $('#s2').val(v1);
 });
+
+  // слайдер
 
 $('.comments__pages').slick({
     slidesToShow: 1,
@@ -47,5 +67,37 @@ $(document).ready(function(){
     infinite: true,
     autoplay: true,
     autoplaySpeed: 4000,
+    responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+       slidesToShow: 5,
+      }
+    },
+    {
+      breakpoint: 1100,
+      settings: {
+       slidesToShow: 4,
+      }
+    },
+    {
+      breakpoint: 830,
+      settings: {
+       slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 620,
+      settings: {
+       slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 410,
+      settings: {
+       slidesToShow: 1,
+      }
+    },
+  ]
   });
 });

@@ -1,23 +1,29 @@
 @media (max-width: 1400px) {
   .calculator {
+
     &__top,
     &__box,
     &__bottom {
       flex-direction: column;
     }
+
     &__title {
       margin-bottom: 25px;
     }
+
     &__text {
       max-width: 100%;
     }
+
     &__form-left,
     &__form-right {
       margin: 0 auto;
     }
+
     &__form-left {
       margin-bottom: 50px;
     }
+
     &__price {
       margin-bottom: 25px;
     }
@@ -27,16 +33,20 @@
 @media (max-width: 1300px) {
   .header {
     padding: 0;
+
     &__top {
       flex-wrap: wrap;
     }
+
     &__bottom {
       align-items: flex-end;
     }
+
     .contacts {
       display: block;
       display: flex;
       padding: 50px 0;
+
       &__phone {
         margin-bottom: 0;
         margin-right: 40px;
@@ -48,22 +58,27 @@
       }
     }
   }
+
   .order {
     margin-top: 0;
     width: 100%;
+
     &__inner {
       flex-direction: column;
       padding: 20px 40px;
     }
+
     &__text {
       text-align: center;
       margin-bottom: 25px;
       padding-top: 15px;
     }
   }
+
   .menu {
     order: 1;
     width: 100%;
+
     &__list {
       // margin: 0 auto;
       justify-content: space-between;
@@ -72,9 +87,11 @@
       padding: 20px 10px;
       background: #3284FF;
     }
+
     &__list-item+.menu__list-item {
       margin-left: 0;
     }
+
     &__list-item {
       padding: 0 30px;
     }
@@ -86,22 +103,28 @@
       width: 200px;
     }
   }
+
   .footer {
     &__top {
-     flex-wrap: wrap;
-    } 
+      flex-wrap: wrap;
+    }
+
     &__top-left {
       margin-bottom: 80px;
     }
+
     &__top-center {
       order: 2;
       width: 100%;
     }
+
     &__top-text,
     &__top-bottom {
       margin: 0 auto;
     }
+
     .contacts {
+
       &__phone,
       &__email {
         margin-bottom: 20px;
@@ -115,9 +138,11 @@
     &__top {
       margin-bottom: 70px;
     }
+
     &__bottom {
       display: block;
     }
+
     &__picture {
       img {
         margin: 0 auto;
@@ -126,54 +151,69 @@
       }
     }
   }
+
   .menu {
     &__list-item {
       padding: 0 15px;
     }
   }
+
   .benefits {
     padding-top: 135px;
+
     &__item {
       flex-direction: column;
     }
+
     &__item-content {
       order: 1;
       text-align: center;
     }
+
     &__item-decor {
       margin-bottom: 20px;
     }
   }
+
   .progress {
     flex-direction: column;
+
     &__item:nth-child(2n) {
       border: none;
       border-top: 2px solid #DCDCDC;
-      border-bottom: 2px solid #DCDCDC;;
+      border-bottom: 2px solid #DCDCDC;
+      ;
     }
+
     &__item {
       padding: 25px 0;
     }
   }
+
   .method {
     &__list {
       grid-template-columns: repeat(2, 1fr);
     }
   }
+
   .method {
     padding: 135px 0 50px;
   }
+
   .comments {
     &__title {
       text-align: left;
     }
+
     &__arrows {
       justify-content: center;
     }
+
     &__box {
       grid-template-columns: repeat(1, 1fr);
     }
   }
+
   .support {
     padding-top: 135px;
   }
@@ -187,22 +227,27 @@
       }
     }
   }
+
   .order {
     &__text {
       margin-bottom: 30px;
     }
+
     &__form {
       display: flex;
       flex-direction: column;
     }
+
     &__name,
     &__number {
       margin-bottom: 15px;
       margin-right: 0;
     }
+
     &__number {
       order: -1px;
     }
+
     &__btn {
       padding-top: 15px;
       margin: 0px 75px 40px 75px;
@@ -216,24 +261,29 @@
       width: 65%;
     }
   }
+
   .services {
     padding: 135px 0;
 
     &__box {
       grid-template-columns: repeat(1, 1fr);
     }
+
     &__item {
       margin: 0 auto;
     }
   }
+
   .benefits {
     &__items {
       grid-template-columns: repeat(1, 1fr);
     }
   }
+
   .calculator {
     padding: 75px 15px;
   }
+
   .services__title,
   .car-park__title,
   .benefits__title,
@@ -242,6 +292,7 @@
     font-size: 30px;
     line-height: 37px;
   }
+
   .benefits__text,
   .services__text,
   .calculator__text,
@@ -319,213 +370,237 @@
     &__top {
       padding-top: 30px;
     }
-     &__contacts {
-       position: absolute;
-       flex-direction: column;
-       left: 40px;
-       bottom: 110px;
-       &__email {
-         padding-top: 15px;
-       }
-     }
-     &__bottom {
-       text-align: center;
-     }
-     &__title {
-       font-size: 32px;
-       line-height: 39px;
-       margin-bottom: 30px;
-     }
-     &__text {
-       font-size: 15px;
-       line-height: 21px;
-       margin: 0 auto;
-       margin-bottom: 30px;
-     }
-     &__bottom-list {
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-       padding-left: 0;
-     }
-     &__bottom-item {
+
+    &__contacts {
+      position: absolute;
+      flex-direction: column;
+      left: 40px;
+      bottom: 110px;
+
+      &__email {
+        padding-top: 15px;
+      }
+    }
+
+    &__bottom {
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 39px;
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 21px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+    &__bottom-list {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-left: 0;
+    }
+
+    &__bottom-item {
       font-size: 15px;
       line-height: 18px;
       margin-bottom: 30px;
       padding: 0;
+
       &::before {
         top: 25px;
         width: 100%;
         left: -7px;
-       }
-     }
-     &__bottom-item+.header__bottom-item {
-       margin-left: 0;
-     }
-     &__picture {
-       img {
-         padding: 40px 0;
-         width: 65%
-       }
-     }
-     .contacts {
-       transform: translateY(-700%);
-       transition: all .5s;
-       z-index: 100;
+      }
+    }
 
-       &__email {
-         padding-top: 15px;
-       }
+    &__bottom-item+.header__bottom-item {
+      margin-left: 0;
+    }
 
-       &--active {
-         transform: translateY(0%);
-         transition: all .5s;
-       }
-   }
-   }
-   
-   .menu {
-     margin-left: -10px;
-     position: absolute;
-     width: 100%;
-     &__list {
-       margin: 0;
-       width: 100%;
-       top: 0;
-       position: absolute;
-       flex-direction: column;
-       align-items: center;
-       justify-content: flex-start;
-       z-index: 5;
-       background: #2E2E2E;
-       padding-top: 125px;
-       min-height: 100vh;
-       transform: translateY(-300%);
-       transition: all .3s;
-       opacity: 0.97;
-       &--active {
-         transform: translateY(-8%);
-         transition: all .3s;
-        }
-     }
-     &__list-item {
-         text-align: left;
-         padding: 10px 0 13px 65px;
-         color: #FFFFFF;
-         font-size: 15px;
-         width: 100%;
-         cursor: pointer;       
-         &:hover {
-           background: #3284FF;
-           color: #2E2E2E;
-         }
-       }
-   }
+    &__picture {
+      img {
+        padding: 40px 0;
+        width: 65%
+      }
+    }
 
-   .benefits {
-     &__item-content {
-       font-size: 17px;
-       line-height: 24px;
-     }
-   }
-   .services {
-     &__item {
-       flex-direction: column;
-       text-align: center;
-       padding: 30px;
-     }
+    .contacts {
+      transform: translateY(-700%);
+      transition: all .5s;
+      z-index: 100;
 
-     &__item-content {
-       order: 1;
-     }
+      &__email {
+        padding-top: 15px;
+      }
 
-     &__item-decor {
-       max-width: 300px;
-       margin-bottom: 15px;
-     }
+      &--active {
+        transform: translateY(0%);
+        transition: all .5s;
+      }
+    }
+  }
 
-     &__item-details {
-       margin: 0 auto;
-       margin-bottom: 20px;
-     }
+  .menu {
+    margin-left: -10px;
+    position: absolute;
+    width: 100%;
 
-     &__item-form {
-       flex-direction: column;
-     }
+    &__list {
+      margin: 0;
+      width: 100%;
+      top: 0;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      z-index: 5;
+      background: #2E2E2E;
+      padding-top: 125px;
+      min-height: 100vh;
+      transform: translateY(-300%);
+      transition: all .3s;
+      opacity: 0.97;
 
-     &__item-text {
-       margin-bottom: 20px;
-     }
+      &--active {
+        transform: translateY(-8%);
+        transition: all .3s;
+      }
+    }
 
-     &__last {
-       padding: 20px;
-     }
-   }
+    &__list-item {
+      text-align: left;
+      padding: 10px 0 13px 65px;
+      color: #FFFFFF;
+      font-size: 15px;
+      width: 100%;
+      cursor: pointer;
 
-     .car-park {
-       &__list {
-          grid-template-columns: repeat(1, 1fr);
-          padding-left: 80px;
-       }
-       &__item {
-         margin-bottom: 25px;
-         font-size: 15px;
-         line-height: 18px;
-       }
-     }
+      &:hover {
+        background: #3284FF;
+        color: #2E2E2E;
+      }
+    }
+  }
 
-     .services__title,
-     .car-park__title,
-     .benefits__title,
-     .calculator__title,
-     .support__title,
-     .method__title,
-     .comments__title {
-       font-size: 20px;
-       line-height: 28px;
-     }
+  .benefits {
+    &__item-content {
+      font-size: 17px;
+      line-height: 24px;
+    }
+  }
 
-     .benefits__text,
-     .services__text,
-     .calculator__text,
-     .support__text {
-       font-size: 15px;
-       line-height: 21px;
-     }
+  .services {
+    &__item {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px;
+    }
 
-     .footer {
-       .logo {
-         img {
-           margin: 0 auto;
-         }
-       }
-       &__top {
-         flex-direction: column;
-         margin-bottom: 60px;
-        align-items: center;
-       }
-       &__top-left {
-         margin-bottom: 40px;
-       }
-       &__top-center {
-         order: 0;
-         margin-bottom: 50px;
-       }
-       &__top-text {
-         max-width: 100%;
-         margin-bottom: 20px;
-       }
-       &__bottom {
-         flex-direction: column;
-       }
-       &__copy {
-         margin-bottom: 20px;
-       }
-       &__download-link{
-         margin-bottom: 10px;
-       }
-     }
-   
+    &__item-content {
+      order: 1;
+    }
+
+    &__item-decor {
+      max-width: 300px;
+      margin-bottom: 15px;
+    }
+
+    &__item-details {
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    &__item-form {
+      flex-direction: column;
+    }
+
+    &__item-text {
+      margin-bottom: 20px;
+    }
+
+    &__last {
+      padding: 20px;
+    }
+  }
+
+  .car-park {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: 80px;
+    }
+
+    &__item {
+      margin-bottom: 25px;
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+
+  .services__title,
+  .car-park__title,
+  .benefits__title,
+  .calculator__title,
+  .support__title,
+  .method__title,
+  .comments__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .benefits__text,
+  .services__text,
+  .calculator__text,
+  .support__text {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .footer {
+    .logo {
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    &__top {
+      flex-direction: column;
+      margin-bottom: 60px;
+      align-items: center;
+    }
+
+    &__top-left {
+      margin-bottom: 40px;
+    }
+
+    &__top-center {
+      order: 0;
+      margin-bottom: 50px;
+    }
+
+    &__top-text {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    &__bottom {
+      flex-direction: column;
+    }
+
+    &__copy {
+      margin-bottom: 20px;
+    }
+
+    &__download-link {
+      margin-bottom: 10px;
+    }
+  }
+
 }
 
 @media (max-width: 640px) {
@@ -535,42 +610,54 @@
       align-items: end;
       margin-bottom: 0;
     }
+
     &__input-from {
       margin-bottom: 15px;
+
       input {
         border-radius: 5px 5px 0px 0px;
       }
     }
+
     &__input-change {
       top: 111px;
     }
+
     &__input-to {
       margin-bottom: 15px;
+
       input {
         border-radius: 0px 0px 5px 5px;
       }
     }
+
     &__checkboxes {
       flex-direction: column;
     }
-     &__form-left {
-       margin-bottom: 15px;
-     }
-     &__count {
-       border-radius: 0px 0px 5px 5px;
-     }
-     &__price {
-       text-align: center;
-     }
+
+    &__form-left {
+      margin-bottom: 15px;
+    }
+
+    &__count {
+      border-radius: 0px 0px 5px 5px;
+    }
+
+    &__price {
+      text-align: center;
+    }
   }
+
   .method {
     &__list {
       grid-template-columns: repeat(1, 1fr);
     }
+
     &__item {
       margin: 0 auto;
     }
   }
+
   .comments {
     &__add {
       top: 45px;
@@ -584,6 +671,7 @@
       padding: 10px 30px 30px 30px;
     }
   }
+
   .method {
     &__item-text {
       font-size: 17px;
@@ -593,41 +681,48 @@
 }
 
 @media (max-width: 430px) {
-   .car-park {
-     &__list {
-       padding-left: 50px;
-     }
-   }
-   .benefits {
-     &__item {
-       padding: 40px 40px 50px 40px;
-     }
-   }
-   .calculator {
-     padding: 75px 10px;
-   }
-   .order {
-     &__form {
-       max-width: 250px;
-     }
-     &__text {
-       margin: 0 auto;
-       margin-bottom: 30px;
-     }
-     &__btn {
-       margin: 0 auto;
-     }
-   }
-   .footer {
-     &__top-center {
-       font-size: 13px;
-       line-height: 18px;
-     }
-     &__download {
-       font-size: 15px;
-       line-height: 18px;
-     }
-   }
+  .car-park {
+    &__list {
+      padding-left: 50px;
+    }
+  }
+
+  .benefits {
+    &__item {
+      padding: 40px 40px 50px 40px;
+    }
+  }
+
+  .calculator {
+    padding: 75px 10px;
+  }
+
+  .order {
+    &__form {
+      max-width: 250px;
+    }
+
+    &__text {
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+    &__btn {
+      margin: 0 auto;
+    }
+  }
+
+  .footer {
+    &__top-center {
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    &__download {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
 }
 
 @media (max-width: 330px) {
@@ -636,6 +731,7 @@
       width: 280px;
     }
   }
+
   .method {
     &__item-icon {
       img {
@@ -643,15 +739,15 @@
         min-height: 50px;
       }
     }
+
     &__list {
       padding-left: 10px;
     }
   }
+
   .comments {
     &__item {
       padding: 10px 20px 15px 20px;
     }
   }
 }
-
-

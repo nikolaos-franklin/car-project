@@ -314,8 +314,9 @@
     background-color: transparent;
     border: none;
     z-index: 100;
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-    -webkit-tap-highlight-color: transparent;
+    &:focus {
+      outline: 0;
+    }
   }
 
   .burger span,

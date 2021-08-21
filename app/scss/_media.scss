@@ -710,6 +710,9 @@
 
   .calculator {
     padding: 75px 10px;
+    &__bottom-link {
+      text-align: center;
+    }
   }
 
   .order {
@@ -745,6 +748,12 @@
   .calculator {
     &__input {
       width: 280px;
+    }
+    &__count {
+      max-width: 280px;
+    }
+    &__bottom-link {
+      text-align: center;
     }
   }
 
